@@ -1,0 +1,18 @@
+{
+  "name": "todolistservice",
+  "version": "1.0.0",
+  "description": "A service to add update and delete to do tasks",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chananya Winston",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.6.4",
+    "node-schedule": "^2.0.0"
+  }
+}
