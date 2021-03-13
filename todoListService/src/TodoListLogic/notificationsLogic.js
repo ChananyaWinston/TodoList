@@ -25,7 +25,7 @@ export const scheduleNotifications = () => {
         var tasksToSend = JSON.stringify({ tasks: activeTasks });
 
         const options = {
-          hostname: "127.0.0.1",
+          hostname: "host.docker.internal",
           port: 8080,
           path: "/notifications/notify",
           method: "POST",

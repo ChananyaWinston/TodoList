@@ -1,6 +1,6 @@
 const mockNotiifcationDB = [
     {
-        originDomain: '127.0.0.1',
+        originDomain: 'host.docker.internal',
         domainToSendTo: 'todolist.com'
     }
 ]
@@ -8,6 +8,7 @@ const mockNotiifcationDB = [
 export const getUserToNotify = (origin) => {
 
     try {
+        console.log(origin);
         const appToSendNotification = mockNotiifcationDB.find(app => {
             return app.originDomain === origin;
         });
