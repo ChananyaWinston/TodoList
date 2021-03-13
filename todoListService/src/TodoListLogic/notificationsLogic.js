@@ -1,6 +1,6 @@
 import schedule from "node-schedule";
 import http from "http";
-import { getTasksByDuedateFromDB } from "../TodoListDataAccess/mongoDataAccess.js";
+import { getTasksByDuedateFromDB } from "../DataAccess/mongoDataAccess.js";
 
 const getCurrentDateInDuedateFormat = () => {
   const currentDay = new Date().getDate();

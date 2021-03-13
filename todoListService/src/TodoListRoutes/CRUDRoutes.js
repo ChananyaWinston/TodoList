@@ -15,7 +15,7 @@
       await addTask(task);
       res.sendStatus(200);
     } catch (error) {
-      res.status(500).send(error);
+      res.status(500).send("Sorry, we encounterd trouble saving your task");
     }
   });
 
@@ -26,6 +26,7 @@
       res.sendStatus(200);
     } catch (error) {
       res.status(500).send(error);
+      res.status(500).send("Sorry, we encounterd trouble updating your task");
     }
   });
 
@@ -36,6 +37,7 @@
       res.sendStatus(200);
     } catch (error) {
       res.status(500).send(error);
+      res.status(500).send("Sorry, we encounterd trouble deleting your task");
     }
   });
 
@@ -45,6 +47,7 @@
           res.status(200).send(tasksList);
         } catch (error) {
           res.status(500).send(error);
+          res.status(500).send("Sorry, we encounterd trouble retrieving your task");
         }
   });
 
@@ -55,6 +58,7 @@
           res.status(200).send(tasksList);
         } catch (error) {
           res.status(500).send(error);
+          res.status(500).send("Sorry, we encounterd trouble retrieving your task");
         }
   });
 

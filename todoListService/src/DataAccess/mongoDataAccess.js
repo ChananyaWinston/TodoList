@@ -12,6 +12,7 @@ const addTaskToDB = async (task) => {
     
     } catch (e) {
         console.error(e);
+        throw e
     }
 }
 
@@ -30,6 +31,7 @@ const updateTaskInDB = async (taskToUpdate) => {
     
     } catch (e) {
         console.error(e);
+        throw e
     } 
 }
 
@@ -44,6 +46,7 @@ const deleteTaskFromDB = async (id) => {
     
     } catch (e) {
         console.error(e);
+        throw e;
     }
 }
 
@@ -61,6 +64,7 @@ const getAllTasksFromDB = async (id) => {
     
     } catch (e) {
         console.error(e);
+        throw e;
     } 
 }
 
@@ -81,6 +85,7 @@ const getTasksByDuedateFromDB = async (duedate) => {
     
     } catch (e) {
         console.error(e);
+        throw e;
     } 
 }
 

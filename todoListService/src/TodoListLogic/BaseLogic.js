@@ -4,7 +4,7 @@ import {
   deleteTaskFromDB,
   getTasksByDuedateFromDB,
   getAllTasksFromDB,
-} from "../TodoListDataAccess/mongoDataAccess.js";
+} from "../DataAccess/mongoDataAccess.js";
 
 const addTask = async (task) => {
   await addTaskToDB(task);
